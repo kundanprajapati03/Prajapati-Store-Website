@@ -1,0 +1,491 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.topic {
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    margin: 20px;
+}
+
+.topic span {
+    background: rgb(255, 102, 46);
+    color: #fff;
+    display: inline-block;
+    padding: 10px 30px;
+    text-shadow: 2px 2px 4px black;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+/* header styling  */
+.header {
+    align-items: center;
+    height: 30px;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.header ul a {
+    color: rgb(0, 8, 255);
+    font-size: 2vw;
+    text-decoration: none;
+    margin: 20px;
+}
+
+/* navbar styling  */
+.navbar {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(255, 102, 46);
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo img {
+    height: 100px;
+    width: auto;
+    margin: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    font-size: 23px;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px;
+    cursor: pointer;
+    transition: 1ms all;
+}
+
+nav .icon a:hover,
+nav .menu a:hover {
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+/* nav .icon a:hover {
+    color: rgb(255, 255, 255);
+    background-color: aqua;
+    border-radius: 10px;
+} */
+
+nav .btn i {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    margin-right: 40px;
+}
+
+
+
+/* Slider styling  */
+.swiper {
+    width: 100%;
+    height: 400px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* our product styling  */
+.product {
+    display: flex;
+    padding: 20px;
+}
+
+.product .product-img {
+    height: 500px;
+    width: 40%;
+    border-radius: 25px;
+    margin-left: 80px;
+    overflow: hidden;
+    /* background-color: aqua; */
+    /* box-shadow: 3px 3px 5px black; */
+}
+
+.product .product-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.product-discripction {
+    height: 500px;
+    width: 40%;
+    margin-left: 100px;
+    padding: 30px;
+    font-size: 30px;
+}
+
+.video {
+    margin: auto;
+}
+
+/* <!-- product categories styling  --> */
+.categories .box-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.categories .box-container .box {
+    padding: 3rem 2rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.categories .box-container .box img {
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+}
+
+.categories .box-container .box h3,
+p,
+a {
+    margin: 20px;
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 5px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    color: white;
+    background-color: rgb(255, 102, 46);
+}
+
+/* our policy styling  */
+.features {
+    text-align: center;
+    font-size: 30px;
+    margin: 30px;
+}
+
+.policy-box {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.policy-item {
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 30px;
+    background-color: rgb(255, 102, 46);
+    text-align: center;
+    box-shadow: 3px 3px 4px black;
+}
+
+.policy-item img {
+    height: 100px;
+    width: 200px;
+}
+
+/* customer review slider styling */
+.review {
+    display: flex;
+}
+
+.review-box {
+    height: auto;
+    width: 400px;
+    background-color: rgb(255, 102, 46);
+    border-radius: 20px;
+    text-align: center;
+    padding: 30px;
+    margin: 20px 10px;
+    box-shadow: 2px 2px 4px black;
+    transition: 2px;
+}
+
+.review-box:hover {
+    zoom: 110%;
+}
+
+.review-box img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.review-box h3 {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+/* footer styling  */
+
+.footer-contaner {
+    height: auto;
+    background-color: rgb(255, 102, 46);
+    display: flex;
+    justify-content: space-between;
+}
+
+.address {
+    display: flex;
+    margin: 40px;
+}
+
+.about-help-policy {
+    display: flex;
+    margin: 40px 40px;
+    text-align: center;
+}
+
+.about-help-policy :hover {
+    zoom: 102%;
+}
+
+.footer-contaner ul {
+    list-style-type: none;
+}
+
+.footer-contaner ul span {
+    color: black;
+    font-size: 30px;
+
+}
+
+.footer-contaner ul li a {
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.footer-contaner hr {
+    height: 150px;
+    width: 4px;
+    background-color: rgb(81, 57, 178);
+    margin: 0 40px;
+}
+
+.footer-contaner .media {
+    margin: 20px;
+}
+
+.footer-contaner .media img {
+    height: 60px;
+    margin: 20px 20px 0 20px;
+}
+
+.copyright {
+    font-size: 1.5vw;
+    background-color: aqua;
+    text-align: center;
+}
+
+/* Sarch bar styling over  */
+.search:target{
+    display: block;
+}
+.search{
+    display: none;
+    z-index: 2;
+    background-color: white;
+    position: absolute;
+    top: 23%;
+    right: 1%;
+    border-radius: 20px;
+}
+.search-form {
+    width: 600px;
+    height: 50px;
+    box-shadow: 2px 2px 4px black;
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.search-form input {
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    border-radius: 20px;
+    font-size: 20px;
+    color: rgb(255, 128, 0);
+    padding: 0 1.5rem;
+}
+
+.search-form label {
+    font-size: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.search-form label:hover {
+    color: rgb(255, 128, 0);
+}
+
+/* account section start here  */
+.login-form:target{
+    display: block;
+}
+.login-form {
+    display: none;
+    z-index: 2;
+    background-color: white;
+    position: absolute;
+    top: 23%;
+    right: 1%;
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 4px black;
+}
+
+.login-form .head {
+    color: rgb(255, 98, 0);
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.login-form .text {
+    width: 95%;
+    height: 40px;
+    margin: 2px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 20px;
+    color: black;
+    border: 1px solid black;
+}
+
+.login-form p {
+    font-size: 18px;
+}
+
+.login-form .btn {
+    padding: 3px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.login-form .btn:hover {
+    background: orange;
+    color: #fff;
+}
+
+/* shopping cart start Here */
+
+.shopping-cart:target{
+    display: block;
+}
+.shopping-cart {
+    display: none;
+    z-index: 2;
+    position: absolute;
+    top: 23%;
+    right: 1%;
+    width: 400px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px black;
+    background-color: white;
+}
+.shopping-cart .head {
+    font-size: 40px;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    margin: 10px;
+}
+.shopping-cart .box {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 6px 0;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 1px 2px 4px black;
+}
+
+.shopping-cart .box img {
+    height: 100px;
+    width: 100px;
+}
+
+.shopping-cart .box .fa-trash {
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.shopping-cart .box .fa-trash:hover {
+    color: rgb(255, 128, 0);
+}
+.shopping-cart .box .content span {
+    color: var(--light-color);
+    font-size: 20px;
+}
+
+.shopping-cart .total {
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    margin: 10px;
+}
+
+.shopping-cart a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.shopping-cart .btn {
+    padding: 3px ;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+}
+
+.shopping-cart .btn:hover {
+    background: orange;
+    color: #fff;
+}
